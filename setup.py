@@ -4,14 +4,14 @@ setup(
     name="tmp-aiogram",
     version="0.1.0",
     description="Aiogram bot shablonini yaratishga yordam beruvchi paket",
-    author="Ismingiz",
-    author_email="email@domain.com",
+    author="Husanboy Azamov",
+    author_email="azamovhusanboy08@gmail.com",
     packages=find_packages(),
     install_requires=[
-        "aiogram==2.20",
-        "autoenv-tool==0.6",
+        "aiogram==2.2",
+        "autoenv-tool",
         "requests",
-        "https://github.com/Husanjonazamov/tmp-aiogram"
+        "git+https://github.com/Husanjonazamov/tmp-aiogram.git#egg=tmp-aiogram",
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
