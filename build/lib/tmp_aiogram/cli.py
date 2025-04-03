@@ -35,7 +35,7 @@ def create_folder_structure(project_name):
             file_path = os.path.join(project_name, folder, sub_file)
             with open(file_path, "w") as f:
                 if sub_file == "__init__.py":
-                    f.write("from . import start\n" if folder == "handlers" else "from . import start\n" if folder == "services" else "from . import state\n")
+                    f.write("from . import start\n" if folder == "handlers" else "pass\n")
                 else:
                     f.write(f"# {sub_file} fayli\n")
     
