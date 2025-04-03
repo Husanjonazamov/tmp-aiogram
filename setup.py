@@ -8,7 +8,7 @@ setup(
         'aiogram==2.2',
         'requests',
         'click',
-        'autoenv-tool',
+        'autoenv-tool>=0.6',
         
     ],
     entry_points={
