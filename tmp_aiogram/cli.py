@@ -2,7 +2,6 @@ import os
 import sys
 import click
 
-# `create` funksiyasini yangilash
 def create_folder_structure(project_name):
     """ Yaratilishi kerak bo'lgan papkalar va fayllar """
     folders = [
@@ -22,13 +21,11 @@ def create_folder_structure(project_name):
         "state": ["__init__.py", "state.py"]
     }
 
-    # Loyihani yaratish papkalarini joylashtirish
     for folder in folders:
         folder_path = os.path.join(project_name, folder)
         if not os.path.exists(folder_path):
             os.makedirs(folder_path)
 
-    # Fayllarni yaratish
     for file in files:
         with open(os.path.join(project_name, file), "w") as f:
             f.write("")
@@ -44,9 +41,8 @@ def create_folder_structure(project_name):
     
     print(f"'{project_name}' loyihasi uchun paket struktura yaratildi!")
 
-# `tmp create` komandasini `click` yordamida sozlash
 @click.command()
-@click.argument("project_name")
+@click.argument("project_name")  # Argumentni to'g'ri qo'shish
 def create(project_name):
     """ Yangi loyiha yaratish uchun komanda """
     print(f"{project_name} loyihasini yaratish uchun tasdiqlang (y/n): ")
@@ -59,6 +55,5 @@ def create(project_name):
         print("❌ Yaratish bekor qilindi.")
         sys.exit(0)
 
-# Entry point
 if __name__ == "__main__":
     create()

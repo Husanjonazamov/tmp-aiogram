@@ -7,12 +7,10 @@ setup(
     install_requires=[
         'aiogram==2.2',
         'requests',
-        'click',
-        'autoenv-tool'
     ],
     entry_points={
         'console_scripts': [
-            'tmp=tmp_aiogram.cli:create', 
+            'tmp=tmp_aiogram.cli:create',  # To'g'ri yo'lni tekshirish zarur
         ],
     },
     url="https://github.com/Husanjonazamov/tmp-aiogram",
