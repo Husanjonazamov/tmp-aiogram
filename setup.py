@@ -7,6 +7,9 @@ setup(
     install_requires=[
         'aiogram==2.2',
         'requests',
+        'click',
+        'autoenv-tool',
+        
     ],
     entry_points={
         'console_scripts': [
