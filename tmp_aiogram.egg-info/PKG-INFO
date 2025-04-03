@@ -9,6 +9,8 @@ Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
 Requires-Dist: aiogram==2.2
 Requires-Dist: requests
+Requires-Dist: click
+Requires-Dist: autoenv-tool
 Dynamic: author
 Dynamic: author-email
 Dynamic: classifier
