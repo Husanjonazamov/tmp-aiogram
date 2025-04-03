@@ -10,6 +10,7 @@ Classifier: Operating System :: OS Independent
 Description-Content-Type: text/markdown
 Requires-Dist: requests
 Requires-Dist: aiogram==2.2
+Requires-Dist: click
 Requires-Dist: autoenv-tool
 Dynamic: author
 Dynamic: author-email
