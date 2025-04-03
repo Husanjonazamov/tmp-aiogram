@@ -9,9 +9,9 @@ setup(
         'aiogram==2.2',
         'autoenv-tool'
     ],
-    entry_points={  # Komanda nomini qo'shish
+    entry_points={  
         'console_scripts': [
-            'tmp=cli:create', 
+            'tmp=tmp_aiogram.cli:create', 
         ],
     },
     long_description=open('README.md').read(),  # README faylini o'qish

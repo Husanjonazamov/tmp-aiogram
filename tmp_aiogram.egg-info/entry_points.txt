@@ -1,2 +1,2 @@
 [console_scripts]
-tmp = cli:create
+tmp = .cli:create
