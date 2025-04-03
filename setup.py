@@ -1,22 +1,27 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="tmp-aiogram",
-    version="0.1.0",
-    description="Aiogram bot shablonini yaratishga yordam beruvchi paket",
-    author="Husanboy Azamov",
-    author_email="azamovhusanboy08@gmail.com",
-    packages=find_packages(),
+    name="tmp-aiogram",  # Paket nomi
+    version="0.1",  # Versiya
+    packages=find_packages(),  # Paketlarni qidirish
     install_requires=[
-        "aiogram==2.2",
-        "autoenv-tool",
-        "requests",
-        "git+https://github.com/Husanjonazamov/tmp-aiogram.git#egg=tmp-aiogram",
+        'requests',  # Asosiy talablarga kiritilgan paketlar
+        'aiogram==2.2',
+        'autoenv-tool'
     ],
-    classifiers=[
-        "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent",
+    entry_points={  # Komanda nomini qo'shish
+        'console_scripts': [
+            'tmp=cli:create', 
+        ],
+    },
+    long_description=open('README.md').read(),  # README faylini o'qish
+    long_description_content_type='text/markdown',
+    url='https://github.com/Husanjonazamov/tmp-aiogram',  # GitHub URL
+    author='Husanjon Azamov',
+    author_email='azamovhusanboy@gmail.com',
+    classifiers=[  # Dastur haqida umumiy ma'lumot
+        'Programming Language :: Python :: 3',
+        'License :: OSI Approved :: MIT License',
+        'Operating System :: OS Independent',
     ],
-    python_requires='>=3.6',
 )

@@ -1,0 +1,3 @@
+requests
+aiogram==2.2
+autoenv-tool

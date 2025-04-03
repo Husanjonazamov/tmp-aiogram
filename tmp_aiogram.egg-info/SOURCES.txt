@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+tmp_aiogram.egg-info/PKG-INFO
+tmp_aiogram.egg-info/SOURCES.txt
+tmp_aiogram.egg-info/dependency_links.txt
+tmp_aiogram.egg-info/entry_points.txt
+tmp_aiogram.egg-info/requires.txt
+tmp_aiogram.egg-info/top_level.txt
