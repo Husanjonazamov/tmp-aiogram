@@ -50,7 +50,7 @@ tmp-aiogram/
 ## Yangi template yaratish
 
 ``` bash
-    tmp create
+    tmp project_name
 ```
 
 
