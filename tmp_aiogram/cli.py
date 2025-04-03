@@ -32,146 +32,146 @@ def create_folder_structure(project_name):
                 f.write("# FROM baseImage\nFROM python:3.9-slim\n")
             elif file == ".gitignore":
                 f.write("""
-                            # Django #
-                            *.log
-                            *.pot
-                            *.pyc
-                            __pycache__
-                            db.sqlite3
-                            media
+# Django #
+*.log
+*.pot
+*.pyc
+__pycache__
+db.sqlite3
+media
 
-                            # Backup files #
-                            *.bak
+# Backup files #
+*.bak
 
-                            # If you are using PyCharm #
-                            # User-specific stuff
-                            .idea/**/workspace.xml
-                            .idea/**/tasks.xml
-                            .idea/**/usage.statistics.xml
-                            .idea/**/dictionaries
-                            .idea/**/shelf
+# If you are using PyCharm #
+# User-specific stuff
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
 
-                            # AWS User-specific
-                            .idea/**/aws.xml
+# AWS User-specific
+.idea/**/aws.xml
 
-                            # Generated files
-                            .idea/**/contentModel.xml
+# Generated files
+.idea/**/contentModel.xml
 
-                            # Sensitive or high-churn files
-                            .idea/**/dataSources/
-                            .idea/**/dataSources.ids
-                            .idea/**/dataSources.local.xml
-                            .idea/**/sqlDataSources.xml
-                            .idea/**/dynamic.xml
-                            .idea/**/uiDesigner.xml
-                            .idea/**/dbnavigator.xml
+# Sensitive or high-churn files
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
 
-                            # Gradle
-                            .idea/**/gradle.xml
-                            .idea/**/libraries
+# Gradle
+.idea/**/gradle.xml
+.idea/**/libraries
 
-                            # File-based project format
-                            *.iws
+# File-based project format
+*.iws
 
-                            # IntelliJ
-                            out/
+# IntelliJ
+out/
 
-                            # JIRA plugin
-                            atlassian-ide-plugin.xml
+# JIRA plugin
+atlassian-ide-plugin.xml
 
-                            # Python #
-                            *.py[cod] 
-                            *$py.class
+# Python #
+*.py[cod] 
+*$py.class
 
-                            # Distribution / packaging
-                            .Python build/
-                            develop-eggs/
-                            dist/
-                            downloads/
-                            eggs/
-                            .eggs/
-                            lib/
-                            lib64/
-                            parts/
-                            sdist/
-                            var/
-                            wheels/
-                            *.whl
-                            *.egg-info/
-                            .installed.cfg
-                            *.egg
-                            *.manifest
-                            *.spec
+# Distribution / packaging
+.Python build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.whl
+*.egg-info/
+.installed.cfg
+*.egg
+*.manifest
+*.spec
 
-                            # Installer logs
-                            pip-log.txt
-                            pip-delete-this-directory.txt
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
 
-                            # Unit test / coverage reports
-                            htmlcov/
-                            .tox/
-                            .coverage
-                            .coverage.*
-                            .cache
-                            .pytest_cache/
-                            nosetests.xml
-                            coverage.xml
-                            *.cover
-                            .hypothesis/
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
 
-                            # Jupyter Notebook
-                            .ipynb_checkpoints
+# Jupyter Notebook
+.ipynb_checkpoints
 
-                            # pyenv
-                            .python-version
+# pyenv
+.python-version
 
-                            # celery
-                            celerybeat-schedule.*
+# celery
+celerybeat-schedule.*
 
-                            # SageMath parsed files
-                            *.sage.py
+# SageMath parsed files
+*.sage.py
 
-                            # Environments
-                            .env
-                            .venv
-                            env/
-                            venv/
-                            ENV/
-                            env.bak/
-                            venv.bak/
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
 
-                            # mkdocs documentation
-                            /site
+# mkdocs documentation
+/site
 
-                            # mypy
-                            .mypy_cache/
+# mypy
+.mypy_cache/
 
-                            # Sublime Text #
-                            *.tmlanguage.cache
-                            *.tmPreferences.cache
-                            *.stTheme.cache
-                            *.sublime-workspace
-                            *.sublime-project
+# Sublime Text #
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
 
-                            # sftp configuration file
-                            sftp-config.json
+# sftp configuration file
+sftp-config.json
 
-                            # Package control specific files
-                            PackageControl.last-run
-                            PackageControl.ca-list
-                            PackageControl.ca-bundle
-                            PackageControl.system-ca-bundle
-                            GitHub.sublime-settings
+# Package control specific files
+PackageControl.last-run
+PackageControl.ca-list
+PackageControl.ca-bundle
+PackageControl.system-ca-bundle
+GitHub.sublime-settings
 
-                            # Visual Studio Code #
-                            .vscode/*
-                            !.vscode/settings.json
-                            !.vscode/tasks.json
-                            !.vscode/launch.json
-                            !.vscode/extensions.json
-                            .history
+# Visual Studio Code #
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history
 
-                        """)
+""")
                 
             else:
                 f.write(f"# {file} fayli\n")
@@ -195,20 +195,26 @@ def create_folder_structure(project_name):
     
     print(f"'{project_name}' loyihasi uchun paket struktura yaratildi!")
 
+RED = "\033[91m"
+GREEN = "\033[92m"
+YELLOW = "\033[93m"
+BLUE = "\033[94m"
+RESET = "\033[0m"
+
 
 
 @click.command()
 @click.argument("project_name")  
 def create(project_name):
     """ Yangi loyiha yaratish uchun komanda """
-    print(f"{project_name} loyihasini yaratish uchun tasdiqlang (y/n): ")
+    print(YELLOW + f"{project_name} loyihasini yaratish uchun tasdiqlang (y/n): " + RESET)
     confirm = input().strip().lower()
     
     if confirm == "y":
         create_folder_structure(project_name)
-        print(f"✅ '{project_name}' loyihasi yaratildi!")
+        print(GREEN + f"✅ '{project_name}' loyihasi yaratildi!" + RESET)
     else:
-        print("❌ Yaratish bekor qilindi.")
+        print(RED + "❌ Yaratish bekor qilindi." + RESET)
         sys.exit(0)
 
 if __name__ == "__main__":
