@@ -11,7 +11,7 @@ setup(
         "aiogram==2.20",
         "autoenv-tool==0.6",
         "requests",
-        "git+https://github.com/username/repository.git@branch#egg=package_name"
+        "https://github.com/Husanjonazamov/tmp-aiogram"
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
